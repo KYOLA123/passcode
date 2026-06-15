@@ -1,7 +1,7 @@
 /* Tailwind Engine Config overrides */
 @layer base {
     :root {
-        --inverse-surface: #f0f1f2;
+        --inverse-surface: #60aefc;
         --secondary: #8cd6b1;
         --on-tertiary-fixed-variant: #c0c7d6;
         --inverse-primary: #05021f;
@@ -10,19 +10,19 @@
         --primary: #c7c2e9;
         --surface-container-low: #131b2e;
         --surface-dim: #0b1326;
-        --on-surface: #e1e3e4;
+        --on-surface: #b7a1e9;
         --on-secondary-fixed-variant: #a8f2cc;
         --background: #0b1326;
         --surface-bright: #31394d;
         --on-primary-fixed-variant: #1c0e68;
         --surface-container-highest: #31394d;
-        --on-tertiary-container: #dce2f3;
-        --on-surface-variant: #c9c5ce;
+        --on-tertiary-container: #0a42db;
+        --on-surface-variant: #eaf49d;
         --tertiary-fixed: #181f2b;
         --primary-fixed-dim: #464363;
         --outline: #938f99;
         --on-error: #690005;
-        --on-background: #e1e3e4;
+        --on-background: #09a6f4;
         --on-tertiary-fixed: #ffffff;
         --surface-container-high: #283042;
         --secondary-fixed-dim: #246f51;
