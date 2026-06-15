@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Security Suite - Password Management</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-surface border-b border-outline-variant h-16 flex items-center justify-between px-gutter max-w-container-max mx-auto w-full">
+        <div class="flex items-center gap-base">
+            <span class="material-symbols-outlined text-primary text-2xl" data-icon="shield_lock">shield_lock</span>
+            <span class="text-headline-md font-headline-md font-bold text-primary">Security Suite</span>
+        </div>
+        <div class="flex items-center gap-lg">
+            <button type="button" class="hover:bg-surface-container-high transition-colors p-2 rounded-full active:scale-95 duration-200">
+                <span class="material-symbols-outlined text-on-surface-variant" data-icon="settings">settings</span>
+            </button>
+            <button type="button" class="hover:bg-surface-container-high transition-colors p-2 rounded-full active:scale-95 duration-200">
+                <span class="material-symbols-outlined text-on-surface-variant" data-icon="help">help</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="flex min-h-screen pt-16">
+        <aside class="hidden md:flex flex-col h-[calc(100vh-64px)] w-64 bg-surface-container-low border-r border-outline-variant sticky top-16 p-gutter shrink-0">
+            <div class="flex items-center gap-md mb-lg">
+                <div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant">
+                    <img alt="Julie Jacobs" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdA36kwA6L1wgWhiSyUUD2KDKkDdvvA0BXr5CsAudiXUqkwnRGHmemQS3iiT8s4yb0SAOxbq0nCsVIbuTcLFcCwFN8HhXJI4j0SKnyYjCqQgiWb4l_hTMTBNEJDQuKntuAGn4UC1q8AZP76woDnsGHOJXRh3c_qt-ZC4h4IyoH0HzLudosk4TFNV3Hyp1TQmM3Z5_2vP6vuBE4I3lNTe18M_3dX2zDjH4_pxh_CihQwx9Ocd2PZ1hJ_FAAjyBSIeXj0zBrZkjwNDE0"/>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-label-lg font-label-lg text-on-surface">Julie Jacobs</span>
+                    <span class="text-xs text-on-surface-variant">Client Relationship Executive</span>
+                </div>
+            </div>
+            <nav class="flex-1 flex flex-col gap-base">
+                <a class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-colors group" href="#">
+                    <span class="material-symbols-outlined group-hover:text-primary" data-icon="verified_user">verified_user</span>
+                    <span class="text-label-lg font-label-lg">Security Check</span>
+                </a>
+                <a class="flex items-center gap-md px-md py-sm text-on-secondary-container bg-secondary-container rounded-lg" href="#">
+                    <span class="material-symbols-outlined" data-icon="enhanced_encryption">enhanced_encryption</span>
+                    <span class="text-label-lg font-label-lg">Vault</span>
+                </a>
+                <a class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-colors group" href="#">
+                    <span class="material-symbols-outlined group-hover:text-primary" data-icon="password">password</span>
+                    <span class="text-label-lg font-label-lg">Generator</span>
+                </a>
+                <a class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-colors group" href="#">
+                    <span class="material-symbols-outlined group-hover:text-primary" data-icon="history">history</span>
+                    <span class="text-label-lg font-label-lg">Activity</span>
+                </a>
+            </nav>
+            <div class="mt-auto flex flex-col gap-base pt-lg">
+                <button type="button" class="bg-primary text-on-primary py-sm rounded-lg font-label-lg hover:opacity-90 active:scale-95 transition-all mb-md">
+                    Upgrade Protection
+                </button>
+                <a class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-colors" href="#">
+                    <span class="material-symbols-outlined" data-icon="settings">settings</span>
+                    <span class="text-label-lg font-label-lg">Settings</span>
+                </a>
+                <a class="flex items-center gap-md px-md py-sm text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-colors" href="#">
+                    <span class="material-symbols-outlined" data-icon="contact_support">contact_support</span>
+                    <span class="text-label-lg font-label-lg">Support</span>
+                </a>
+            </div>
+        </aside>
+
+        <main class="flex-1 p-gutter md:p-xl flex justify-center items-start overflow-y-auto">
+            <div class="w-full max-w-[900px] grid grid-cols-1 lg:grid-cols-12 gap-lg">
+                <div class="lg:col-span-12 mb-base">
+                    <h1 class="text-headline-lg font-headline-lg text-primary">Password Security</h1>
+                    <p class="text-body-lg text-on-surface-variant mt-base">Update your credentials to maintain maximum account integrity.</p>
+                </div>
+
+                <div class="lg:col-span-7 space-y-lg">
+                    <div class="bg-surface-container-lowest border border-outline-variant p-lg rounded-xl shadow-sm">
+                        <div class="space-y-md">
+                            <div>
+                                <label class="block text-label-lg font-label-lg text-on-surface mb-xs" for="new_password">New Password</label>
+                                <div class="relative">
+                                    <input class="w-full bg-surface-container-low px-md py-sm border border-outline-variant rounded-lg text-on-surface placeholder:text-on-surface-variant/50 focus:ring-2 focus:ring-primary/30 focus:border-primary outline-none transition-all pr-12 font-mono-sample" id="new_password" placeholder="••••••••" type="password"/>
+                                    <button type="button" id="toggle-password" class="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined" id="toggle-password-icon">visibility</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="pt-base">
+                                <div class="flex justify-between items-center mb-xs">
+                                    <span class="text-label-sm font-label-sm uppercase text-on-surface-variant">Strength</span>
+                                    <span class="text-label-lg font-label-lg text-on-surface-variant/40" id="strength-label">Empty</span>
+                                </div>
+                                <div class="h-2 w-full bg-surface-container-high rounded-full overflow-hidden flex gap-0.5">
+                                    <div class="h-full w-1/3 bg-surface-container-high transition-colors duration-500" id="segment-1"></div>
+                                    <div class="h-full w-1/3 bg-surface-container-high transition-colors duration-500" id="segment-2"></div>
+                                    <div class="h-full w-1/3 bg-surface-container-high transition-colors duration-500" id="segment-3"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-label-lg font-label-lg text-on-surface mb-xs" for="confirm_password">Confirm password</label>
+                                <input class="w-full bg-surface-container-low px-md py-sm border border-outline-variant rounded-lg text-on-surface placeholder:text-on-surface-variant/50 focus:ring-2 focus:ring-primary/30 focus:border-primary outline-none transition-all font-mono-sample" id="confirm_password" placeholder="••••••••" type="password"/>
+                                <p id="match-error" class="text-error text-xs mt-1 hidden">Passwords do not match</p>
+                            </div>
+
+                            <button id="submit-btn" disabled class="w-full bg-primary/40 text-on-primary/50 cursor-not-allowed py-sm rounded-lg font-label-lg transition-all mt-lg h-14">
+                                Save and update password
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-surface-container-low border border-outline-variant p-lg rounded-xl">
+                        <div class="flex items-center justify-between mb-md">
+                            <h3 class="text-label-lg font-label-lg text-primary">Generated Suggestions</h3>
+                            <button id="refresh-suggestions" class="p-1 hover:bg-surface-container-high rounded-full transition-colors text-on-surface-variant active:rotate-180 duration-500">
+                                <span class="material-symbols-outlined" data-icon="refresh">refresh</span>
+                            </button>
+                        </div>
+                        <div class="space-y-sm" id="suggestions-container">
+                            </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="sticky top-gutter space-y-lg">
+                        <div class="relative bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-xl shadow-primary/5">
+                            <div class="hidden lg:block absolute left-0 top-12 -translate-x-1/2 w-4 h-4 bg-surface-container-lowest border-l border-b border-outline-variant rotate-45"></div>
+                            <div class="p-md bg-surface-container-low border-b border-outline-variant">
+                                <h3 class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant">Requirements</h3>
+                            </div>
+                            <div class="p-lg space-y-md">
+                                <div class="flex items-center gap-md requirement-unmet" id="req-length">
+                                    <span class="material-symbols-outlined text-xl" id="icon-length">radio_button_unchecked</span>
+                                    <span class="text-body-md">Minimum of 8 characters</span>
+                                </div>
+                                <div class="flex items-center gap-md requirement-unmet" id="req-upper">
+                                    <span class="material-symbols-outlined text-xl" id="icon-upper">radio_button_unchecked</span>
+                                    <span class="text-body-md">Contains an uppercase letter</span>
+                                </div>
+                                <div class="flex items-center gap-md requirement-unmet" id="req-number">
+                                    <span class="material-symbols-outlined text-xl" id="icon-number">radio_button_unchecked</span>
+                                    <span class="text-body-md">Contains a number (0-9)</span>
+                                </div>
+                                <div class="flex items-center gap-md requirement-unmet" id="req-special">
+                                    <span class="material-symbols-outlined text-xl" id="icon-special">radio_button_unchecked</span>
+                                    <span class="text-body-md">Contains special characters (!@#$%^&*.)</span>
+                                </div>
+                            </div>
+                            <div class="p-md bg-surface-container-low border-t border-outline-variant">
+                                <h3 class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant mb-md">Why this matters</h3>
+                                <p class="text-body-md text-on-surface-variant leading-relaxed">
+                                    A robust password is your first line of defense. By following these industry-standard complexity rules, you ensure your personal and corporate data remains shielded from automated brute-force attacks.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="rounded-xl overflow-hidden relative aspect-video border border-outline-variant">
+                            <img alt="Cybersecurity context" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoStGLbAvByW3tC6h-dRfizQCoHjy2Y9E83BiULyoYyCrHkYhW5kTPoE5pH98x_lUTVoPPMRLGWaZBGrZy403hFMpV_W2xcsmd-6_awYtBfiKquwlNEv0261wk-LvCC_hvvhXaDJby8PSW7SD4Zpyb6amCMX2lkEKFfwJqXW3IcQluJisEukSCp59BOO82jgdIBLWiSgenYGELRYMr0C09EtRZCrf7QNIdcHbn0AcP1x94QuoBbCj9v8efSc_nBt1ILBS8ESjo4be0"/>
+                            <div class="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent flex items-end p-lg">
+                                <div class="text-white">
+                                    <p class="text-label-lg font-label-lg text-primary">Vault Protection Active</p>
+                                    <p class="text-xs opacity-70">256-bit AES end-to-end encryption</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
