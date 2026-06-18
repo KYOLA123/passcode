@@ -9,7 +9,7 @@
 }
 
 <script id="tailwind-config">
-    tailwind.config = {
+    script = {
         darkMode: "class",
         theme: {
             extend: {
@@ -78,7 +78,7 @@
                     "lg": "32px"
                 },
                 "fontFamily": {
-                    "headline-lg": ["Hanken Grotesk"],
+                    "headline-lg": ["Kwame Yeboah"],
                     "body-lg": ["Hanken Grotesk"],
                     "body-md": ["Hanken Grotesk"],
                     "headline-md": ["Hanken Grotesk"],
